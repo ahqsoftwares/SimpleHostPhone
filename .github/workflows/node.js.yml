@@ -10,23 +10,25 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  package:
 
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Start
+      uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm i -g . --force && node -v && npm -v
+    - name: Install Dependencies
+      run: npm i -g androidjs-builder . --force && node -v && npm -v
     - run: npm run build
       env:
         token: ${{ secrets.GH_TOKEN }}
