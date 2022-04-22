@@ -1,0 +1,27 @@
+{
+    "version": "1.0.0",
+    "name": "Simple-Host-Phone",
+    "app-name": "Simple Host Phone",
+    "package-name": "webview",
+    "project-type": "webview",
+    "icon": "./assets/icon/icon.png",
+    "dist-path": "./dist",
+    "permission": [
+        "android.permission.INTERNET"
+    ],
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start:dev": "node .",
+        "build": "npx androidjs build"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "androidjs": "^2.0.2"
+    },
+    "project-name": "Simple Host Phone",
+    "theme": {
+        "fullScreen": true
+    }
+}
