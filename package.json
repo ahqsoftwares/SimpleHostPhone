@@ -13,11 +13,11 @@
     "main": "main.js",
     "scripts": {
         "start:dev": "node .",
-        "build": "npx androidjs build --release"
+        "build": "androidjs build --release"
     },
     "author": "",
     "license": "ISC",
-    "dependencies": {
+    "devDependencies": {
         "androidjs": "^2.0.2"
     },
     "project-name": "Simple Host Phone",
