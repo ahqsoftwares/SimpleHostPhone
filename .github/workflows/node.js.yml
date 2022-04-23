@@ -15,7 +15,8 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
-      node-version: 17.x
+      matrix:
+        node-version: [17.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
