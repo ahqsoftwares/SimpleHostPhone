@@ -13,7 +13,7 @@
     "main": "main.js",
     "scripts": {
         "start:dev": "node .",
-        "build": "androidjs build --release"
+        "build": "npx androidjs build --release"
     },
     "author": "",
     "license": "ISC",
