@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "Simple-Host-Phone",
+    "name": "simple-host-phone",
     "app-name": "Simple Host Phone",
     "package-name": "webview",
     "project-type": "webview",
@@ -17,7 +17,7 @@
     },
     "author": "",
     "license": "ISC",
-    "devDependencies": {
+    "dependencies": {
         "androidjs": "^2.0.2"
     },
     "project-name": "Simple Host Phone",
